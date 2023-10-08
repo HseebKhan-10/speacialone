@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Libre+Baskerville&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            height: 1112px;
+            width: 1264px;
+
+        }
+        body{
+            background-color: peachpuff;
+        }
+
+        .main {
+            margin: auto;
+            width: 30%;
+            position: relative;
+            background-attachment: fixed;
+
+        }
+
+        .hp1 {
+
+            position: absolute;
+            height: 124px;
+            width: 125px;
+            background-color: whitesmoke;
+            transform: rotate(-45deg);
+            transform-origin: center;
+            top: 22%;
+            left: 26%;
+            border-top-right-radius: 44%;
+            border-top-left-radius: 47%;
+        }
+
+        .hp2 {
+
+            position: absolute;
+            height: 124px;
+            width: 125px;
+            background-color: whitesmoke;
+            transform: rotate(45deg);
+            transform-origin: center;
+            top: 22%;
+            left: 48%;
+            border-top-right-radius: 47%;
+            border-top-left-radius: 44%;
+            resize: none;
+        }
+
+        .hp3 {
+            position: absolute;
+            height: 124px;
+            width: 125px;
+            background-color: whitesmoke;
+            transform: rotate(-90deg);
+            transform-origin: center;
+            top: 58px;
+            left: 0px;
+            border-top-right-radius: 47%;
+            border-top-left-radius: 44%;
+
+        }
+
+        .text {
+            position: absolute;
+            height: 33px;
+            width: 177px;
+            resize: none;
+            top: 28%;
+            left: 30%;
+
+        }
+
+        .text h2 {
+            font-size: 25px;
+            font-weight: 700;
+            font-family: 'Dancing Script', cursive;
+            color: whitesmoke;
+            
+
+        }
+        
+        .hp2:hover{
+            background-color: red;
+        }
+        .hp2:hover ~ .hp1{
+            background-color: red;
+        }
+        .hp2:hover >.hp3{
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        
+        <div class="hp2" class="onmouse">
+            <div class="hp3" > </div>
+        </div>
+        <div class="hp1" class="onmouse"> </div>
+        <div class="text">
+            <h2>I MISSED YOU</h2>
+        </div>
+    </div>
+
+</body>
+
+</html>
